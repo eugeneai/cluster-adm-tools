@@ -1,0 +1,10 @@
+cache/pacman/pkg/*
+.ssh/*
+home/*/.ssh/*
+home/guest/*
+mnt/smb/*
+mnt/a
+var/log/*
+*.fsa
+#usr/share/doc/libreoffice/*
+var/mosix/*
