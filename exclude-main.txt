@@ -8,3 +8,4 @@ var/log/*
 *.fsa
 #usr/share/doc/libreoffice/*
 var/mosix/*
+var/lib/docker/*

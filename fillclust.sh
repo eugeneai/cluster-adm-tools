@@ -19,7 +19,8 @@ if [ "$RC" = "$PCM" ] ; then
 fi
 
 echo "The variant is $OPTION $RC"
-sleep 5s
+
+sleep $[ ( $RANDOM % 10 )  + 1 ]s
 
 if [ "$OPTION" = "new" ] ; then
     FROOT="/mnt/gentoo"
@@ -53,6 +54,9 @@ do
     $DEBUG $RS
 done
 
+#rsync /home/opt
+$DEBUG $RSYNC /home/opt $WHERE/home/
+
 for D in $UDIRS
 do
     RS="$URSYNC /$D $WHERE"
@@ -66,8 +70,10 @@ fi
 
 $DEBUG $RSYNC --exclude-from=exclude.txt --delete-after /etc/ $WHERE/etc
 
+$DEBUG ssh root@$IP "echo $IP > /etc/mosix/mosip"
+
 $DEBUG ssh root@$IP 'bash -s' < /root/stage2-$OPTION.sh
 
 echo "The sync is ended."
 
-$DEBUG sleep 2s
+#$DEBUG sleep 2s
