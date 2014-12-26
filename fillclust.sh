@@ -33,7 +33,7 @@ fi
 #DIRS="test"
 UDIRS="home root"
 #UDIRS="test2"
-RSYNC="rsync --timeout=5 --stats --progress -avz --delete-after --exclude-from=exclude-main.txt"
+RSYNC="rsync --timeout=5 --stats --progress -avz --exclude-from=exclude-main.txt"
 URSYNC="rsync --timeout=5 --stats --progress -avzu --max-size=5M --exclude-from=exclude-main.txt"
 WHERE="root@$IP:$FROOT"
 RSYNC_PASSWORD="1111"
@@ -53,9 +53,6 @@ do
     echo ">>>>>>>>>>> $RS"
     $DEBUG $RS
 done
-
-#rsync /home/opt
-$DEBUG $RSYNC /home/opt $WHERE/home/
 
 for D in $UDIRS
 do

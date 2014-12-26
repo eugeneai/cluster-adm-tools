@@ -3,5 +3,6 @@ dhcp/dhcpd.conf
 hostname
 mtab
 mosix/mosip
+fstab
 openvpn/*
 */pkg/*

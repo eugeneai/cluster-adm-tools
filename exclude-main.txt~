@@ -2,13 +2,13 @@ cache/pacman/pkg/*
 .ssh/*
 home/*/.ssh/*
 home/guest/*
+home/pacman
 mnt/smb/*
 mnt/a
 var/log/*
 *.fsa
+#usr/share/doc/libreoffice/*
 var/mosix/*
 var/lib/docker/*
 var/lib/systemd/coredump
 */pkg/*
-common/*
-boot/
