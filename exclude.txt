@@ -5,3 +5,4 @@ mtab
 mosix/mosip
 openvpn/*
 */pkg/*
+home/cluster/common/

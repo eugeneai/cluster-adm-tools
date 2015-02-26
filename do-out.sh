@@ -15,7 +15,7 @@ do
 		"$*" $ip &
 		echo "Done"
             else
-                echo "Station $io is down."
+                echo "Station $ip is down."
             fi
 	fi
 done

@@ -12,7 +12,7 @@ do
             ping -W 2 -c 1 $ip 2>1 > /dev/null
             if [ $? -eq 0 ] ;
             then
-		ssh root@$ip "$*"
+		ssh root@$ip "$*" &
 		#echo "Done"
             else
                 echo "Error: Station $ip is down."

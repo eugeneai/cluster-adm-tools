@@ -1,4 +1,4 @@
-cache/pacman/pkg/*
+cache/pacman/*
 .ssh/*
 home/*/.ssh/*
 home/guest/*
@@ -11,4 +11,5 @@ var/lib/docker/*
 var/lib/systemd/coredump
 */pkg/*
 common/*
-boot/
+cluster/common/*
+var/lib/nfs
