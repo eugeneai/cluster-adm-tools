@@ -1,0 +1,18 @@
+Disk /dev/sda: 931.5 GiB, 1000204886016 bytes, 1953525168 sectors
+Disk model: TOSHIBA HDWD110 
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+Disklabel type: gpt
+Disk identifier: 5CC8B4B2-0981-4F33-A4FA-531F33C8899F
+
+Device          Start        End   Sectors   Size Type
+/dev/sda1          34     262177    262144   128M Microsoft reserved
+/dev/sda2      264192    1185791    921600   450M Windows recovery environment
+/dev/sda3     1185792    1390591    204800   100M EFI System
+/dev/sda4     1390592  467378175 465987584 222.2G Microsoft basic data
+
+/dev/sda5   467378176 1258004479 790626304   377G Microsoft basic data
+/dev/sda6  1258004480 1325113343  67108864    32G Linux swap
+/dev/sda7  1325113344 1953525134 628411791 299.7G Linux filesystem
+

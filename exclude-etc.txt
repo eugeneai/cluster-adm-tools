@@ -1,0 +1,9 @@
+ssh/ssh_host*
+dhcp/dhcpd.conf
+hostname
+mtab
+mosix/mosip
+openvpn/*
+*/pkg/*
+home/cluster/common/
+sysctl.d/*

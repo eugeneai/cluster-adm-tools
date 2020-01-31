@@ -1,5 +1,4 @@
 #!/bin/bash
 cd /
-
-/root/stagem.sh
+/root/cluster/stagem.sh
 systemctl default

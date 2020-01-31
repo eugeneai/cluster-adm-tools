@@ -1,0 +1,31 @@
+[Match]
+# Name=enp1s0
+
+MACAddress={mac}
+
+[Network]
+
+#Hostname=pc{num}-v208
+
+DNS=172.27.100.5
+#DNS=8.8.8.8
+IPForward=true
+IPv6PrivacyExtensions=prefer-public
+Domains=isclan.ru, istu.ru, istu.edu, iscnet.ru
+LinkLocalAddressing=yes
+NTP=172.27.100.5
+
+[Address]
+Address=172.27.24.{num}/24
+[Address]
+Address=192.168.3.{num}/24
+[Address]
+Address=fda7:470:72db:3000:172:27:24:{num}/64
+[Address]
+Address=2001:470:72db:3000:172:27:24:{num}/64
+
+[Route]
+Gateway=172.27.24.5
+
+[Route]
+Gateway=fe80::6d4:c4ff:feaa:34af

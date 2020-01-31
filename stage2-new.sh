@@ -1,7 +1,7 @@
 #!/bin/bash
-cd /mnt/gentoo
-rm -rf /mnt/gentoo/{local,selinux,data,lib64}
+cd /mnt/arch
+rm -rf /mnt/arch/{local,selinux,data,lib64}
 ln -sf usr/lib lib64
-/mnt/gentoo/usr/bin/arch-chroot /mnt/gentoo /root/stagem.sh
-umount /dev/sda3
-umount /dev/sda2
+/mnt/arch/usr/bin/arch-chroot /mnt/arch /root/cluster/stagem.sh
+umount /mnt/arch
+

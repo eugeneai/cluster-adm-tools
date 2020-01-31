@@ -1,0 +1,11 @@
+awesome
+gentoo-bashrc
+google-chrome
+htdig
+hunspell-ru
+jdk
+qimageblitz
+rar
+scite
+umlet
+vte

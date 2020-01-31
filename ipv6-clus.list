@@ -1,0 +1,14 @@
+    inet6 2001:470:72db:2::1/64 scope global 
+    inet6 2001:470:72db:2:3cb5:fc84:658b:5487/64 scope global noprefixroute dynamic 
+    inet6 2001:470:72db:2::3/64 scope global 
+    inet6 2001:470:72db:2:30e8:98e1:3207:f249/64 scope global noprefixroute dynamic 
+    inet6 2001:470:72db:2::4/64 scope global 
+    inet6 2001:470:72db:2:48b1:897f:b5e0:665f/64 scope global noprefixroute dynamic 
+    inet6 2001:470:72db:2::5/64 scope global 
+    inet6 2001:470:72db:2:c10c:b859:299d:e956/64 scope global noprefixroute dynamic 
+    inet6 2001:470:72db:2::6/64 scope global 
+    inet6 2001:470:72db:2:da8d:9096:9c2e:a423/64 scope global noprefixroute dynamic 
+    inet6 2001:470:72db:2::7/64 scope global 
+    inet6 2001:470:72db:2:fbf7:a2f4:73f:2790/64 scope global noprefixroute dynamic 
+    inet6 2001:470:72db:2::9/64 scope global 
+    inet6 2001:470:72db:2:dbb:4051:c7de:264a/64 scope global noprefixroute dynamic 
