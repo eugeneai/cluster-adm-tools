@@ -5,7 +5,7 @@ refind-install
 cp -f /etc/cluster/refind.conf /boot/EFI/Microsoft/Boot
 cp -f /etc/cluster/lxdm.conf /var/lib/lxdm/lxdm.conf
 udevadm hwdb --update
-mkinitcpio -p linux
+mkinitcpio -p linux-lts
 #grub-mkconfig -o /boot/grub/grub.cfg
 # depmod -a
 #netctl disable eth
