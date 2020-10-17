@@ -1,4 +1,4 @@
 #!/bin/bash
 cd /
-/root/cluster/stagem.sh
+/root/cluster-adm-tools/stagem.sh
 systemctl default

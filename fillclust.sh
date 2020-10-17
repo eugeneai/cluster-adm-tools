@@ -4,6 +4,8 @@
 
 set -o xtrace
 
+PW=$PWD
+
 IP=$1
 # We suppose by default that we do the initial installation of the node.
 OPTION="renew"
@@ -49,7 +51,7 @@ FDEV="/root/dev"
 #UNAME=$(uname -r)
 #echo "dpkg-reconfigure linux-image-$UNAME" >> stagem.sh
 
-$DEBUG ssh root@$IP 'bash -s' < /root/cluster/stage1-$OPTION.sh
+$DEBUG ssh root@$IP 'bash -s' < $PW/stage1-$OPTION.sh
 
 $DEBUG $RSYNC --exclude-from=exclude-etc.txt --delete-after /etc/ $WHERE/etc
 
@@ -78,7 +80,7 @@ fi
 
 # $DEBUG ssh root@$IP "echo $IP > /etc/mosix/mosip"
 
-$DEBUG ssh root@$IP 'bash -s' < /root/cluster/stage2-$OPTION.sh
+$DEBUG ssh root@$IP 'bash -s' < $PW/stage2-$OPTION.sh
 
 echo "The sync is ended."
 

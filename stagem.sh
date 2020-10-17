@@ -2,8 +2,8 @@
 sed 's/#CLIENT#//g' -i /etc/fstab
 #grub-install /dev/sda
 refind-install
-cp -f /etc/cluster/refind.conf /boot/EFI/Microsoft/Boot
-cp -f /etc/cluster/lxdm.conf /var/lib/lxdm/lxdm.conf
+cp -fv /etc/cluster/refind.conf /boot/EFI/Microsoft/Boot
+cp -fv /etc/cluster/lxdm.conf /var/lib/lxdm/lxdm.conf
 udevadm hwdb --update
 mkinitcpio -p linux-lts
 #grub-mkconfig -o /boot/grub/grub.cfg
